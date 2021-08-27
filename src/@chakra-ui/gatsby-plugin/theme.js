@@ -1,14 +1,9 @@
 import { extendTheme } from "@chakra-ui/react"
+
 const theme = {
+  initialColorMode: "dark",
+  useSystemColorMode: false,
   colors: {
-    styles: {
-      global: props => ({
-        body: {
-          color: props.colorMode === "light" ? "dark" : "light",
-          bg: props.colorMode === "light" ? "light" : "dark",
-        },
-      }),
-    },
     default: {
       light: "#FFFFFF",
       dark: "#16181C",
@@ -33,4 +28,5 @@ const theme = {
     body: "'Rubik', sans-serif",
   },
 }
+
 export default extendTheme(theme)
